@@ -153,6 +153,46 @@ subscriptions:
           source: manual
           note: ''
       updated_at: '2026-11-02T13:56:01.822Z'
+    - tag: MoE
+      description: 混合专家模型
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: mixture of experts
+          keyword_cn: 混合专家模型
+          query: mixture of experts neural network architecture
+        - keyword: sparse mixture of experts
+          keyword_cn: 稀疏混合专家模型
+          query: sparse mixture of experts models with conditional computation
+        - keyword: expert routing
+          keyword_cn: 专家路由
+          query: token routing to specialized expert networks
+        - keyword: load balancing loss
+          keyword_cn: 负载均衡损失
+          query: auxiliary load balancing loss for expert utilization
+      intent_queries:
+        - query: How do mixture of experts models route tokens to specialized expert networks?
+          query_cn: 混合专家模型如何将 token 路由到专门的专家网络？
+          enabled: true
+          source: manual
+          note: ''
+        - query: What gating and load balancing techniques improve expert utilization in sparse mixture of experts?
+          query_cn: 哪些门控和负载均衡技术能提升稀疏混合专家模型中的专家利用率？
+          enabled: true
+          source: manual
+          note: ''
+        - query: How is expert parallelism used to train large mixture of experts models efficiently?
+          query_cn: 专家并行如何用于高效训练大型混合专家模型？
+          enabled: true
+          source: manual
+          note: ''
+        - query: What are the trade offs of conditional computation and expert capacity in mixture of experts architectures?
+          query_cn: 混合专家架构中条件计算与专家容量有哪些权衡？
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-11-12T06:33:45.059Z'
 source_backends:
   arxiv:
     papers_table: arxiv_papers
